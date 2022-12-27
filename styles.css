@@ -157,6 +157,27 @@ div.panel button.button__active span.button__content::before {
   height: auto;
 }
 
+.cart__item .item__line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart__item .item__line .line__options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart__item .item__line .line__options span.options__qty {
+  margin: 0 10px;
+  min-width: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+
 .cart__totals {
   display: grid;
   grid-template-columns: repeat(2, auto);
