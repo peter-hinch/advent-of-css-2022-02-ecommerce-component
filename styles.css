@@ -43,6 +43,8 @@ div.panel div.panel__scroll-area {
 
 div.panel h2 {
   margin: 0 22px 20px;
+  font-size: 32px;
+  line-height: 48px;
 }
 
 div.panel p {
