@@ -58,10 +58,17 @@ div.panel h3.item__description {
   line-height: 20px;
 }
 
-div.panel .price__large {
+div.panel .price {
   font-weight: 700;
-  font-size: 32px;
   line-height: 32px;
+}
+
+div.panel .price__small {
+  font-size: 16px;
+}
+
+div.panel .price__large {
+  font-size: 32px;
 }
 
 div.panel.panel__menu .price__large {
@@ -86,6 +93,13 @@ div.panel button {
 
 div.panel button.button__active {
   background: #000;
+}
+
+div.panel button.button__active span.button__content::before {
+  position: relative;
+  top: 3px;
+  margin-right: 8px;
+  content: url('./images/check.svg');
 }
 
 .menu__item {
