@@ -49,6 +49,27 @@ div.panel p {
   margin: 0 22px;
 }
 
+div.panel h3.item__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+div.panel .price__large {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+div.panel.panel__menu .price__large {
+  margin: 16px 0;
+}
+
+div.panel.panel__cart .price__large {
+  text-align: end;
+}
+
 div.panel button {
   padding: 4px 18px;
   min-height: 32px;
@@ -71,20 +92,6 @@ div.panel button.button__active {
   padding: 42px 29px 0 169px;
 }
 
-.menu__item h3.item__description {
-  margin: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 20px;
-}
-
-.menu__item div.item__price {
-  margin: 16px 0;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 32px;
-}
-
 .menu__item img {
   position: absolute;
   top: 0;
@@ -102,14 +109,34 @@ div.panel button.button__active {
   height: 152px;
   display: block;
   content: ' ';
-  background: rgba(122, 179, 243, 0.2);
   border-radius: 20px;
 }
 
+.menu__item:nth-child(4n + 1)::after {
+  background: rgba(122, 179, 243, 0.2);
+}
+
+.menu__item:nth-child(4n + 2)::after {
+  background: rgba(233, 121, 178, 0.2);
+}
+
+.menu__item:nth-child(4n + 3)::after {
+  background: rgba(215, 215, 249, 0.2);
+}
+
+.menu__item:nth-child(4n + 4)::after {
+  background: rgba(120, 247, 187, 0.2);
+}
+
 .cart__item {
+  position: relative;
+  padding-left: 102px;
 }
 
 .cart__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 64px;
   height: auto;
 }
@@ -117,16 +144,19 @@ div.panel button.button__active {
 .cart__totals {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 25px;
+  justify-content: end;
+  align-content: start;
+  align-items: baseline;
+  gap: 20px;
 }
 
 .totals__label {
   text-align: end;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
 }
 
-.totals__price {
-  text-align: end;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 32px;
+.price__total {
+  color: rgba(107, 0, 245, 1);
 }
