@@ -4,9 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ADvent of CSS 2022 - Day 2 - E-Commerce Component</title>
+    <title>Advent of CSS 2022 - Day 2 - E-Commerce Component</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
   </head>
-  <body></body>
+  <body>
+    <section class="container">
+      <div id="menu" class="panel">
+        <h2>To Go Menu</h2>
+        <div class="menu__item">
+          <h3 class="item__description">Hot Chips with Tomato Sauce</h3>
+          <img
+            src="./images/plate__french-fries.png"
+            alt="hot chips with tomato sauce"
+          />
+          <div class="item__price">$2.23</div>
+          <button class="item__add-remove button__active">In Cart</button>
+        </div>
+        <div class="menu__item">
+          <h3 class="item__description">Salmon and Vegetables</h3>
+          <img
+            src="./images/plate__salmon-vegetables.png"
+            alt="salmon and vegetables"
+          />
+          <div class="item__price">$5.12</div>
+          <button class="item__add-remove">Add to Cart</button>
+        </div>
+      </div>
+      <div id="shopping-cart" class="panel">
+        <h2>Your Cart</h2>
+        <!-- <p>Your cart is empty</p> -->
+        <div class="cart__item"></div>
+      </div>
+    </section>
+  </body>
 </html>
