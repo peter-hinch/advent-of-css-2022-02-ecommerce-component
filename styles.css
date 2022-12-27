@@ -18,15 +18,20 @@ section.container {
   flex-direction: row;
   justify-content: center;
   gap: 50px;
+  margin: 106px 0;
 }
 
 div.panel {
-  padding: 49px 0 0 28px;
+  padding: 49px 0 0 15px;
   width: 375px;
-  overflow-y: scroll;
   background: #fff;
   border-radius: 25px;
   box-shadow: 0px 0px 70px #c7cbe3;
+}
+
+div.panel div.panel__scroll-area {
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 div.panel h2 {
@@ -58,18 +63,44 @@ div.panel button.button__active {
 }
 
 .menu__item {
+  z-index: 100;
   position: relative;
-  padding-left: 156px;
-  background: rgba(122, 179, 243, 0.2);
-  border-radius: 20px;
+  padding: 42px 29px 0 169px;
+}
+
+.menu__item h3.item__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.menu__item div.item__price {
+  margin: 16px 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
 }
 
 .menu__item img {
   position: absolute;
-  top: -17.5px;
-  left: -12.5px;
+  top: 0;
+  left: 0;
   width: 150px;
   height: auto;
+}
+
+.menu__item::after {
+  z-index: -100;
+  position: absolute;
+  top: 17.5px;
+  left: 12.5px;
+  width: 370px;
+  height: 152px;
+  display: block;
+  content: ' ';
+  background: rgba(122, 179, 243, 0.2);
+  border-radius: 20px;
 }
 
 div#menu {
