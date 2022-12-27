@@ -22,11 +22,18 @@ section.container {
 }
 
 div.panel {
-  padding: 49px 0 0 15px;
   width: 375px;
   background: #fff;
   border-radius: 25px;
   box-shadow: 0px 0px 70px #c7cbe3;
+}
+
+div.panel.panel__menu {
+  padding: 49px 0 0 15px;
+}
+
+div.panel.panel__cart {
+  padding: 49px 29px 0 24px;
 }
 
 div.panel div.panel__scroll-area {
@@ -52,10 +59,6 @@ div.panel button {
   background: rgba(107, 0, 245, 1);
   border-radius: 20px;
   border: none;
-}
-
-div.panel button.button__active {
-  background: #000;
 }
 
 div.panel button.button__active {
@@ -103,5 +106,27 @@ div.panel button.button__active {
   border-radius: 20px;
 }
 
-div#menu {
+.cart__item {
+}
+
+.cart__item img {
+  width: 64px;
+  height: auto;
+}
+
+.cart__totals {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 25px;
+}
+
+.totals__label {
+  text-align: end;
+}
+
+.totals__price {
+  text-align: end;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
 }
