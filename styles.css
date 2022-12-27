@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-  background: #eff0f6;
+  min-height: 100vh;
+  background: no-repeat url('./images/bg__top-right.svg'),
+    no-repeat url('./images/bg__left.svg'),
+    no-repeat url('./images/bg__btm-right.svg'), #eff0f6;
+  background-position: 100% 0%, 0% 60%, 100% 100%;
 }
