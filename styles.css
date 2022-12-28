@@ -66,10 +66,13 @@ div.panel p {
 
 div.panel h3.item__description {
   margin: 0;
-  height: 40px;
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
+}
+
+div#menu h3.item__description {
+  height: 40px;
 }
 
 div.panel .price {
@@ -91,6 +94,10 @@ div.panel.panel__menu .price__large {
 
 div.panel.panel__cart .price__large {
   text-align: end;
+}
+
+div.panel button {
+  cursor: pointer;
 }
 
 div.panel button,
@@ -174,12 +181,13 @@ div.panel button.button__active span.button__content::before {
 
 .cart__item .item__image-container .image__count-badge {
   position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  padding: 4px 0 0;
+  top: 16px;
+  left: 15px;
+  padding: 0;
   width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
 }
 
 .cart__item img {
@@ -202,6 +210,20 @@ div.panel button.button__active span.button__content::before {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.cart__item .item__line .line__options button.options__decrement,
+.cart__item .item__line .line__options button.options__increment {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.cart__item .item__line .line__options button.options__decrement::after {
+  position: relative;
+  top: 3px;
+  left: -2px;
+  content: url(./images/chevron.svg);
 }
 
 .cart__item .item__line .line__options span.options__qty {
