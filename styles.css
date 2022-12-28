@@ -41,11 +41,17 @@ div.panel.panel__cart {
 
 div.panel ul {
   padding-left: 0;
+  mrgin: 0
   list-style-type: none;
 }
 
+div.panel hr {
+  margin: 0 0 36px;
+  border: 2.5px solid #d7d7f9;
+}
+
 div.panel div.panel__scroll-area {
-  max-height: calc(100% - 68px);
+  height: calc(100% - 68px);
   border-bottom-right-radius: 25px;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -130,13 +136,13 @@ div.panel button.button__active span.button__content::before {
   content: url('./images/check.svg');
 }
 
-.menu__item {
+li.menu__item {
   z-index: 100;
   position: relative;
   padding: 42px 29px 0 169px;
 }
 
-.menu__item img {
+li.menu__item img {
   position: absolute;
   top: 0;
   left: 0;
@@ -144,7 +150,7 @@ div.panel button.button__active span.button__content::before {
   height: auto;
 }
 
-.menu__item::after {
+li.menu__item::after {
   z-index: -100;
   position: absolute;
   top: 17.5px;
@@ -156,35 +162,41 @@ div.panel button.button__active span.button__content::before {
   border-radius: 20px;
 }
 
-.menu__item:nth-child(4n + 1)::after {
+li.menu__item:nth-child(4n + 1)::after {
   background: rgba(122, 179, 243, 0.2);
 }
 
-.menu__item:nth-child(4n + 2)::after {
+li.menu__item:nth-child(4n + 2)::after {
   background: rgba(233, 121, 178, 0.2);
 }
 
-.menu__item:nth-child(4n + 3)::after {
+li.menu__item:nth-child(4n + 3)::after {
   background: rgba(215, 215, 249, 0.2);
 }
 
-.menu__item:nth-child(4n + 4)::after {
+li.menu__item:nth-child(4n + 4)::after {
   background: rgba(120, 247, 187, 0.2);
 }
 
-.cart__item {
+li.cart__item {
   position: relative;
-  margin-bottom: 43px;
-  padding-left: 82px;
+  margin-bottom: 33px;
+  padding: 0 0 43px 82px;
+  border-bottom: 1px solid #d7d7f9;
 }
 
-.cart__item .item__image-container {
+li.cart__item:last-of-type {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+li.cart__item .item__image-container {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.cart__item .item__image-container .image__count-badge {
+li.cart__item .item__image-container .image__count-badge {
   position: absolute;
   top: 16px;
   left: 15px;
@@ -195,7 +207,7 @@ div.panel button.button__active span.button__content::before {
   line-height: 32px;
 }
 
-.cart__item img {
+li.cart__item img {
   position: absolute;
   top: 0;
   left: 0;
@@ -203,40 +215,40 @@ div.panel button.button__active span.button__content::before {
   height: auto;
 }
 
-.cart__item .item__line {
+li.cart__item .item__line {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.cart__item .item__line .line__options {
+li.cart__item .item__line .line__options {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.cart__item .item__line .line__options button.options__decrement,
-.cart__item .item__line .line__options button.options__increment {
+li.cart__item .item__line .line__options button.options__decrement,
+li.cart__item .item__line .line__options button.options__increment {
   width: 32px;
   height: 32px;
   padding: 0;
 }
 
-.cart__item .item__line .line__options button.options__increment {
+li.cart__item .item__line .line__options button.options__increment {
   transform: rotate(180deg);
 }
 
-.cart__item .item__line .line__options button.options__decrement::after,
-.cart__item .item__line .line__options button.options__increment::after {
+li.cart__item .item__line .line__options button.options__decrement::after,
+li.cart__item .item__line .line__options button.options__increment::after {
   position: relative;
   top: 3.5px;
   left: -2px;
   content: url(./images/chevron.svg);
 }
 
-.cart__item .item__line .line__options span.options__qty {
+li.cart__item .item__line .line__options span.options__qty {
   margin: 0 10px;
   min-width: 24px;
   text-align: center;
