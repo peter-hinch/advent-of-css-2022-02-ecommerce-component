@@ -39,6 +39,11 @@ div.panel.panel__cart {
   padding: 49px 29px 0 24px;
 }
 
+div.panel ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
 div.panel div.panel__scroll-area {
   max-height: calc(100% - 68px);
   border-bottom-right-radius: 25px;

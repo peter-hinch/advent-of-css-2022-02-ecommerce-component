@@ -13,92 +13,96 @@
       <div id="menu" class="panel panel__menu">
         <h2>To Go Menu</h2>
         <div class="panel__scroll-area">
-          <div class="menu__item">
-            <h3 class="item__description">Hot Chips with Tomato Sauce</h3>
-            <img
-              src="./images/plate__french-fries.png"
-              alt="hot chips with tomato sauce"
-            />
-            <div class="price price__large">$2.23</div>
-            <button class="item__add-remove button__active">
-              <span class="button__content">In Cart</span>
-            </button>
-          </div>
-          <div class="menu__item">
-            <h3 class="item__description">Salmon and Vegetables</h3>
-            <img
-              src="./images/plate__salmon-vegetables.png"
-              alt="salmon and vegetables"
-            />
-            <div class="price price__large">$5.12</div>
-            <button class="item__add-remove">
-              <span class="button__content">Add to Cart</span>
-            </button>
-          </div>
-          <div class="menu__item">
-            <h3 class="item__description">Spaghetti with Sauce</h3>
-            <img
-              src="./images/plate__spaghetti-meat-sauce.png"
-              alt="spaghetti with sauce"
-            />
-            <div class="price price__large">$7.82</div>
-            <button class="item__add-remove">
-              <span class="button__content">Add to Cart</span>
-            </button>
-          </div>
-          <div class="menu__item">
-            <h3 class="item__description">Bacon and Eggs</h3>
-            <img src="./images/plate__bacon-eggs.png" alt="bacon and eggs" />
-            <div class="price price__large">$3.44</div>
-            <button class="item__add-remove">
-              <span class="button__content">Add to Cart</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div id="shopping-cart" class="panel panel__cart">
-        <h2>Your Cart</h2>
-        <!-- <p>Your cart is empty</p> -->
-        <div class="panel__scroll-area">
-          <div class="cart__item">
-            <h3 class="item__description">Hot Chips with Tomato Sauce</h3>
-            <div class="item__image-container">
+          <ul id="menu__items">
+            <li class="menu__item">
+              <h3 class="item__description">Hot Chips with Tomato Sauce</h3>
               <img
                 src="./images/plate__french-fries.png"
                 alt="hot chips with tomato sauce"
               />
-              <div class="image__count-badge">2</div>
-            </div>
-            <div class="price">$2.23</div>
-            <div class="item__line">
-              <div class="line__options">
-                <button class="options__decrement"></button>
-                <span class="options__qty">2</span>
-                <button class="options__increment"></button>
-              </div>
-              <span class="price price__large">$4.46</span>
-            </div>
-          </div>
-          <div class="cart__item">
-            <h3 class="item__description">Spaghetti with Sauce</h3>
-            <div class="item__image-container">
+              <div class="price price__large">$2.23</div>
+              <button class="item__add-remove button__active">
+                <span class="button__content">In Cart</span>
+              </button>
+            </li>
+            <li class="menu__item">
+              <h3 class="item__description">Salmon and Vegetables</h3>
+              <img
+                src="./images/plate__salmon-vegetables.png"
+                alt="salmon and vegetables"
+              />
+              <div class="price price__large">$5.12</div>
+              <button class="item__add-remove">
+                <span class="button__content">Add to Cart</span>
+              </button>
+            </li>
+            <li class="menu__item">
+              <h3 class="item__description">Spaghetti with Sauce</h3>
               <img
                 src="./images/plate__spaghetti-meat-sauce.png"
                 alt="spaghetti with sauce"
               />
-              <div class="image__count-badge">2</div>
-            </div>
-            <div class="price">$7.82</div>
-            <div class="item__line">
-              <div class="line__options">
-                <button class="options__decrement"></button>
-                <span class="options__qty">2</span>
-                <button class="options__increment"></button>
+              <div class="price price__large">$7.82</div>
+              <button class="item__add-remove">
+                <span class="button__content">Add to Cart</span>
+              </button>
+            </li>
+            <li class="menu__item">
+              <h3 class="item__description">Bacon and Eggs</h3>
+              <img src="./images/plate__bacon-eggs.png" alt="bacon and eggs" />
+              <div class="price price__large">$3.44</div>
+              <button class="item__add-remove">
+                <span class="button__content">Add to Cart</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="cart" class="panel panel__cart">
+        <h2>Your Cart</h2>
+        <!-- <p>Your cart is empty</p> -->
+        <div class="panel__scroll-area">
+          <ul id="cart__items">
+            <li class="cart__item">
+              <h3 class="item__description">Hot Chips with Tomato Sauce</h3>
+              <div class="item__image-container">
+                <img
+                  src="./images/plate__french-fries.png"
+                  alt="hot chips with tomato sauce"
+                />
+                <div class="image__count-badge">2</div>
               </div>
-              <span class="price price__large">$15.64</span>
-            </div>
-          </div>
+              <div class="price">$2.23</div>
+              <div class="item__line">
+                <div class="line__options">
+                  <button class="options__decrement"></button>
+                  <span class="options__qty">2</span>
+                  <button class="options__increment"></button>
+                </div>
+                <span class="price price__large">$4.46</span>
+              </div>
+            </li>
+            <li class="cart__item">
+              <h3 class="item__description">Spaghetti with Sauce</h3>
+              <div class="item__image-container">
+                <img
+                  src="./images/plate__spaghetti-meat-sauce.png"
+                  alt="spaghetti with sauce"
+                />
+                <div class="image__count-badge">2</div>
+              </div>
+              <div class="price">$7.82</div>
+              <div class="item__line">
+                <div class="line__options">
+                  <button class="options__decrement"></button>
+                  <span class="options__qty">2</span>
+                  <button class="options__increment"></button>
+                </div>
+                <span class="price price__large">$15.64</span>
+              </div>
+            </li>
+          </ul>
           <hr />
           <div class="cart__totals">
             <div class="totals__label">Subtotal:</div>
