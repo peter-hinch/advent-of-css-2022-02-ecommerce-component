@@ -219,9 +219,14 @@ div.panel button.button__active span.button__content::before {
   padding: 0;
 }
 
-.cart__item .item__line .line__options button.options__decrement::after {
+.cart__item .item__line .line__options button.options__increment {
+  transform: rotate(180deg);
+}
+
+.cart__item .item__line .line__options button.options__decrement::after,
+.cart__item .item__line .line__options button.options__increment::after {
   position: relative;
-  top: 3px;
+  top: 3.5px;
   left: -2px;
   content: url(./images/chevron.svg);
 }
